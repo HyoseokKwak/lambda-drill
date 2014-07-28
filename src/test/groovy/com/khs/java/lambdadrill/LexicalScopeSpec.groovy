@@ -15,6 +15,7 @@ class LexicalScopeSpec extends Specification {
 		expect:
 		scope.scope1()
 		scope.scope2()
+		scope.scope3()
 		1
 	}
 

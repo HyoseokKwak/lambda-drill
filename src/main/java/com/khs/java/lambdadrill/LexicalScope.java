@@ -48,23 +48,22 @@ public class LexicalScope {
 
 	private void scope3() {
 	// Function <input type, return type>
-//	final Function<String, Predicate<String>> startsWithLetter 
-//		= (String letter) -> {
-//		Predicate<String> checkStarts = (String name) -> name
-//				.startsWith(letter);
-//		return checkStarts;
-//	};
+    //	final Function<String, Predicate<String>> startsWithLetter 
+    //		= (String letter) -> {
+    //		Predicate<String> checkStarts = (String name) -> name
+    //				.startsWith(letter);
+    //		return checkStarts;
+    //	};
 
-//	final Function<String, Predicate<String>> startsWithLetter 
-//		= (String letter) -> (String name) -> name.startsWith(letter);
+    //	final Function<String, Predicate<String>> startsWithLetter 
+    //		= (String letter) -> (String name) -> name.startsWith(letter);
 
-	final Function<String, Predicate<String>> startsWithLetter 
-		= letter -> name -> name.startsWith(letter);
-		
-		
-		// ?? from Function to Predicate?
-//	final Function<String, Function<String, Predicate<String>>> startsWithLetter 
-//		= letter2 -> letter -> name -> name.startsWith(letter);
+        final Function<String, Predicate<String>> startsWithLetter 
+            = letter -> name -> name.startsWith(letter);
+            
+            // ?? from Function to Predicate?
+    //	final Function<String, Function<String, Predicate<String>>> startsWithLetter 
+    //		= letter2 -> letter -> name -> name.startsWith(letter);
 		
 		List<String> friends = Arrays.asList(new String[] { "brian", "nate",
 				"neal", "raju", "sara", "scott" });
